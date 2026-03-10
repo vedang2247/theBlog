@@ -1,6 +1,7 @@
+require("dotenv").config();
 const JWT=require("jsonwebtoken");
 
-const secret="$LKNDFLKFKEsed,fn.';'";
+const secret=process.env.secret;
 
 function createToken(user){
     const payload={
